@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Vodafone باقات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>مرحبًا بك في Vodafone</h2>
+  <button onclick="logout()">تسجيل الخروج</button>
+
+  <div class="package">
+    <h3>بـ 200 جنيه - 10400 فليكس</h3>
+    <input type="text" id="mobile1" placeholder="رقم الموبايل">
+    <input type="password" id="pass1" placeholder="كلمة مرور أنا فودافون">
+    <button onclick="sendRequest('10400 Flex', mobile1.value, pass1.value)">طلب الباقة</button>
+  </div>
+
+  <div class="package">
+    <h3>بـ 250 جنيه - 13000 فليكس</h3>
+    <input type="text" id="mobile2" placeholder="رقم الموبايل">
+    <input type="password" id="pass2" placeholder="كلمة مرور أنا فودافون">
+    <button onclick="sendRequest('13000 Flex', mobile2.value, pass2.value)">طلب الباقة</button>
+  </div>
+
+  <div class="package">
+    <h3>بـ 80 جنيه - 5200 فليكس</h3>
+    <input type="text" id="mobile3" placeholder="رقم الموبايل">
+    <input type="password" id="pass3" placeholder="كلمة مرور أنا فودافون">
+    <button onclick="sendRequest('5200 Flex', mobile3.value, pass3.value)">طلب الباقة</button>
+  </div>
+
+  <div class="package">
+    <h3>بـ 40 جيجا نت</h3>
+    <input type="text" id="mobile4" placeholder="رقم الموبايل">
+    <input type="password" id="pass4" placeholder="كلمة مرور أنا فودافون">
+    <button onclick="sendRequest('40 GB Net', mobile4.value, pass4.value)">طلب الباقة</button>
+  </div>
+
+  <div class="package">
+    <h3>شحن رصيد صافي</h3>
+    <input type="text" id="mobile5" placeholder="رقم الموبايل">
+    <input type="password" id="pass5" placeholder="كلمة مرور أنا فودافون">
+    <input type="number" id="balance" placeholder="قيمة الرصيد الصافي">
+    <p id="calc"></p>
+    <button onclick="calcNet()">احسب التكلفة</button>
+    <button onclick="sendBalanceRequest()">طلب شحن رصيد</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
