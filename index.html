@@ -1,62 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <title>طلب باقات فودافون</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <meta charset="UTF-8">
+  <title>تسجيل دخول - Vodafone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>طلب باقات فودافون</h1>
+  <div class="login-container">
+    <h2>تسجيل الدخول</h2>
+    <input type="email" id="email" placeholder="البريد الإلكتروني">
+    <input type="password" id="password" placeholder="كلمة المرور">
+    <button onclick="login()">تسجيل الدخول</button>
+    <p>ليس لديك حساب؟ <a href="#" onclick="register()">سجل الآن</a></p>
+  </div>
 
-    <!-- باقة 10400 -->
-    <div class="card">
-        <h2>باقة 10400 فليكس - 200 كاش</h2>
-        <p>الشروط: لا نوته، لا سلف، لا فليكس فاملي</p>
-        <input type="text" placeholder="رقم الموبايل" id="num1">
-        <input type="password" placeholder="باسورد أنا فودافون" id="pass1">
-        <button onclick="sendData('10400', 200, 'num1', 'pass1')">طلب</button>
-    </div>
-
-    <!-- باقة 13000 -->
-    <div class="card">
-        <h2>باقة 13000 فليكس - 250 كاش</h2>
-        <p>الشروط: لا نوته أو سلف</p>
-        <input type="text" placeholder="رقم الموبايل" id="num2">
-        <input type="password" placeholder="باسورد أنا فودافون" id="pass2">
-        <button onclick="sendData('13000', 250, 'num2', 'pass2')">طلب</button>
-    </div>
-
-    <!-- باقة 5200 -->
-    <div class="card">
-        <h2>باقة 5200 فليكس - 80 كاش</h2>
-        <p>الشروط: لا نوته، لا سلف، لا فليكس فاملي</p>
-        <input type="text" placeholder="رقم الموبايل" id="num3">
-        <input type="password" placeholder="باسورد أنا فودافون" id="pass3">
-        <button onclick="sendData('5200', 80, 'num3', 'pass3')">طلب</button>
-    </div>
-
-    <!-- باقة 40 جيجا -->
-    <div class="card">
-        <h2>باقة 40 جيجا نت فقط</h2>
-        <p>الشروط: ينفع نوته أو سلف، لمرة واحدة فقط</p>
-        <input type="text" placeholder="رقم الموبايل" id="num4">
-        <input type="password" placeholder="باسورد أنا فودافون" id="pass4">
-        <button onclick="sendData('40GB', 0, 'num4', 'pass4')">طلب</button>
-    </div>
-
-    <!-- شحن رصيد صافي -->
-    <div class="card">
-        <h2>شحن رصيد صافي</h2>
-        <input type="text" placeholder="رقم الموبايل" id="num5">
-        <input type="password" placeholder="باسورد أنا فودافون" id="pass5">
-        <input type="number" placeholder="قيمة الرصيد الصافي" id="amount">
-        <p id="result"></p>
-        <button onclick="calculate()">احسب</button>
-        <button onclick="sendBalance()">شحن</button>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
