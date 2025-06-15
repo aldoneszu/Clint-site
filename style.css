@@ -1,33 +1,32 @@
 body {
-    font-family: Arial;
-    background: #f8f8f8;
-    padding: 20px;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #e60000, #fff);
+  text-align: center;
+  padding: 20px;
+  color: #333;
 }
-
-h1 {
-    text-align: center;
-}
-
-.card {
-    background: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-}
-input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 90%;
+input, button {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
 }
 button {
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 button:hover {
-    background: #0056b3;
+  background-color: #b30000;
+}
+.package {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px auto;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+}
+.login-container {
+  margin-top: 50px;
 }
