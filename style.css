@@ -1,14 +1,22 @@
 body {
-  font-family: 'Cairo', sans-serif;
   background: linear-gradient(to right, #e60000, #fff);
+  font-family: 'Cairo', sans-serif;
   text-align: center;
   padding: 20px;
-  color: #333;
+}
+.login-container {
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 input, button {
-  margin: 10px;
+  display: block;
+  margin: 10px auto;
   padding: 10px;
-  width: 200px;
+  width: 90%;
 }
 button {
   background-color: #e60000;
@@ -20,13 +28,14 @@ button:hover {
   background-color: #b30000;
 }
 .package {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 15px auto;
-  width: 300px;
   background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
   border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-.login-container {
-  margin-top: 50px;
+#msg {
+  color: green;
+  margin-top: 10px;
 }
