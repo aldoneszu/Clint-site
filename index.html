@@ -2,21 +2,21 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>تسجيل دخول - Vodafone</title>
+  <title>تسجيل الدخول - Vodafone Client</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="login-container">
-    <h2>تسجيل الدخول</h2>
+    <h2>تسجيل الدخول / إنشاء حساب</h2>
     <input type="email" id="email" placeholder="البريد الإلكتروني">
     <input type="password" id="password" placeholder="كلمة المرور">
-    <button onclick="login()">تسجيل الدخول</button>
-    <p>ليس لديك حساب؟ <a href="#" onclick="register()">سجل الآن</a></p>
+    <button onclick="login()">تسجيل دخول</button>
+    <button onclick="register()">إنشاء حساب جديد</button>
+    <p id="msg"></p>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
